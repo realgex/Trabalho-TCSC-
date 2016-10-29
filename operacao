@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+        double A;
+        double B;
+        double res;
+        double operacao;
+                
+        printf("Digite um numero: ");
+        scanf ("%lf", &A);
+        printf("Digite outro numero: ");
+        scanf ("%lf", &B);
+        
+        printf ("Que operacao deseja realizar?"); 
+        printf ("1 - Adicao \ 2 - Subtracao \ 3 - Multiplicacao \ 4 - Divisao");
+
+        switch (operacao);
+        {
+
+        case 1:
+        res = A+B;
+        break;
+
+        case 2:
+        res = A-B;
+        break;
+
+        case 3:
+        res = A*B;
+        break;
+
+        case 4:
+        res = A/B;
+        break;
+        
+        }
+        
+        //printf("A soma do primeiro numero com o segundo numero eh: ", soma);
+        //printf("A divisao do primeiro numero com o segundo numero eh: ", divisao);
+        //printf("A multiplicacao do primeiro numero com o segundo numero eh: ", multiplicacao);
+        //printf("A subtracao do primeiro numero com o segundo numero eh: ", subtracao);
+        
+        return 0;
+}
+        
