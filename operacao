@@ -15,33 +15,32 @@ int main (void)
         
         printf ("Que operacao deseja realizar?"); 
         printf ("1 - Adicao \ 2 - Subtracao \ 3 - Multiplicacao \ 4 - Divisao");
-
+        
         switch (operacao);
         {
 
         case 1:
         res = A+B;
+        printf("A soma do primeiro numero com o segundo numero eh: ");
         break;
 
         case 2:
         res = A-B;
+        printf("A divisao do primeiro numero com o segundo numero eh: ");
         break;
 
         case 3:
         res = A*B;
+        printf("A multiplicacao do primeiro numero com o segundo numero eh: ", multiplicacao);
         break;
 
         case 4:
         res = A/B;
+        printf("A subtracao do primeiro numero com o segundo numero eh: ", subtracao);
         break;
         
         }
-        
-        //printf("A soma do primeiro numero com o segundo numero eh: ", soma);
-        //printf("A divisao do primeiro numero com o segundo numero eh: ", divisao);
-        //printf("A multiplicacao do primeiro numero com o segundo numero eh: ", multiplicacao);
-        //printf("A subtracao do primeiro numero com o segundo numero eh: ", subtracao);
-        
+              
         return 0;
 }
         
