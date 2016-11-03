@@ -1,0 +1,29 @@
+create database bdtrabalhoIV /* criação do banco de dados */
+
+use bdtrabalhoIV /* comando para dizer que o banco será usado */
+
+create table Empregado (
+cpf int not null primary key,
+nome varchar (50),
+sobrenome varchar (20) )
+
+create table Horista (
+cpf_H int not null,
+preco_hora decimal (4,2),
+horas_trabalhadas decimal (5,2),
+foreign key (cpf_H) references Empregado (cpf) )
+
+create table Comissionado (
+cpf_C int not null,
+total_venda decimal (6,2),
+taxa_comissao decimal (2,2),
+foreign key (cpf_C) references Empregado (cpf) )
+
+alter table Horista add vencimento decimal (5,2)
+
+alter table Comissionado add vencimento decimal (5,2)
+
+select * from Empregado e, Comissionado c
+where e.cpf = c.cpf_c
+
+
